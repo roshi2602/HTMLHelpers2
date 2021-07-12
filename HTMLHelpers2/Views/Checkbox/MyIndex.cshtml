@@ -1,0 +1,15 @@
+﻿@model HTMLHelpers2.Models.Checkbox
+
+@{
+    ViewBag.title = "my checkboox";
+}
+
+<!--
+BeginForm()" is an extension method that writes an opening "<form>" tag to the response.
+-->
+<!--
+ the first parameter in HiddenFor() method is a lambda expression that specifies the model property to be bind with the hidden field.
+-->
+//isActive=is property name
+@Html.CheckBoxFor(i=>i.isActive)
+}

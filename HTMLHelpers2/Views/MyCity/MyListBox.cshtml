@@ -1,0 +1,18 @@
+﻿@model HTMLHelpers2.ViewModel.CityView
+
+@{
+    ViewBag.title = "my list box";
+}
+
+@using (Html.BeginForm())
+{
+
+    //using listbox for
+    //selectedCities in ViewModel, 
+    //Cities in view model is Ienumerable property 
+    @Html.ListBoxFor(x => x.SelectCities,Model.SelectCities)
+    <input type="submit" value="submit" />
+
+    //now create HttpPost in MyCityController
+
+    }
